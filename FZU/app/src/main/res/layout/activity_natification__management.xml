@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backmodify">
+    <include layout="@layout/titlebar_view"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:rowCount="4"
+        android:columnCount="2">
+        <!--是否静音-->
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Mute"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="静音"
+            android:textSize="18dp"/>
+        <Switch
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/On_Off"
+            android:layout_height="46dp"
+            android:layout_width="158dp" />
+
+        <!--是否振动-->
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Vibration"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="振动"
+            android:textSize="18dp"/>
+        <Switch
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/On_Off1"
+            android:layout_height="46dp"
+            android:layout_width="158dp" />
+
+        <!--音量设置-->
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Volume"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="音量"
+            android:textSize="18dp"/>
+
+        <SeekBar
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/ChooseVolume"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"/>
+
+        <!--是否免打扰-->
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/NoDisturb"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="振动"
+            android:textSize="18dp"/>
+        <Switch
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/On_Off2"
+            android:layout_height="46dp"
+            android:layout_width="158dp" />
+    </GridLayout>
+
+</LinearLayout>

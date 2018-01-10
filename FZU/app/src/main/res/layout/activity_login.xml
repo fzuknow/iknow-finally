@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/back">
+<!--<include layout="@layout/titlebar_view"/>-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:rowCount="8"
+        android:paddingTop="50dp"
+        android:columnCount="3">
+        <ImageView
+            android:layout_marginTop="70dp"
+            android:id="@+id/lookImage"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="115dp"
+            android:layout_height="100dp"
+
+            android:layout_columnSpan="3"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/head"
+            android:layout_width="100dp" />
+        <EditText
+            android:id="@+id/telephone"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:hint="手机号码"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_bg"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:hint="密码"
+            android:background="@drawable/edit_bg"
+            android:layout_marginBottom="15dp"/>
+        <CheckBox
+            android:id="@+id/auto"
+            android:layout_marginLeft="55dp"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="记住密码"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingTop="6dp"
+            android:layout_marginRight="55dp"
+            android:text="忘记密码？"
+            android:textColor="#3f51b5"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:text="登        录"
+            android:paddingTop="6dp"
+            android:textColor="#c3cbd6"
+            android:textSize="15dp"
+            android:background="@drawable/shape"
+            android:layout_marginBottom="15dp"
+            android:onClick="login"/>
+        <Space
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"/>
+        <TextView
+            android:id="@+id/gosignin"
+            android:text="没有账号，马上去注册"
+            android:textColor="#3f51b5"
+            android:layout_marginRight="65dp"/>
+
+    </GridLayout>
+
+</LinearLayout>

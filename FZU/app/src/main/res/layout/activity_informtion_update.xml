@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmodify">
+
+<include layout="@layout/titlebar_view"/>
+    <!--个人信息-->
+    <GridLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="11"
+        android:columnCount="3"
+
+        android:background="@drawable/backmodify">
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center"
+            android:background="@drawable/head"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/nicheng"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="昵       称:"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/InputName"
+            android:layout_marginLeft="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingLeft="25dp"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sex"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="性       别:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/InputSex"
+            android:layout_marginLeft="20dp"
+
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingLeft="25dp"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/birthday"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="出生年月:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/InputBirth"
+            android:layout_marginLeft="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingLeft="25dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/StudentNo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="学        号:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/InputNo"
+            android:layout_marginLeft="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingLeft="25dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/academy"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="学        院:"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/InputAcademy"
+            android:layout_marginLeft="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingLeft="25dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/major"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="专        业:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/InputMajor"
+            android:layout_marginLeft="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingLeft="25dp"
+            android:textSize="18dp"/>
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Email"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="邮        箱:"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/InputEmail"
+            android:layout_marginLeft="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingLeft="25dp"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/telephone"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill"
+            android:text="电话号码:"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/InputTelephone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:paddingLeft="25dp"
+            android:textSize="18dp"/>
+
+        <Button
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="65dp"
+            android:id="@+id/modifySure"
+            android:layout_width="wrap_content"
+            android:text="确           认"
+            android:textColor="#ffffff"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:layout_height="40dp"
+            android:background="@drawable/shape"/>
+    </GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/question_deatil">
+    <include layout="@layout/titlebar_view"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/head"
+       android:layout_columnSpan="1"
+        android:id="@+id/head"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:text="赖赖"
+        android:layout_toRightOf="@+id/head"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:text="时间"
+        android:layout_toRightOf="@+id/head"
+       android:layout_alignBottom="@+id/name"
+        android:paddingTop="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="40dp"
+        android:layout_gravity="right"/>
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+    <!--&lt;!&ndash;中间为一条分割线&ndash;&gt;-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#EDEDED"/>-->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:columnCount="5"
+        android:rowCount="1">
+        <Space
+            android:layout_columnSpan="1"
+            android:layout_width="220dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+
+            android:text="点赞" />
+
+        <TextView
+            android:id="@+id/Praise"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_columnSpan="1"
+            android:gravity="left"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CommentImage"
+            android:layout_columnSpan="1"
+          android:text="评论" />
+
+        <TextView
+            android:id="@+id/Comment"
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:layout_columnSpan="1"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="55dp" />
+    </GridLayout>
+    <!--中间为一条分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"/>
+    <ListView
+        android:paddingTop="10dp"
+        android:id="@+id/detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

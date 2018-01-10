@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:rowCount="8"
+    android:columnCount="3"
+    android:paddingTop="50dp"
+   android:background="@drawable/back">
+
+<ImageView
+
+    android:layout_marginTop="70dp"
+    android:id="@+id/lookImage"
+    android:layout_marginLeft="115dp"
+    android:layout_marginRight="115dp"
+    android:layout_height="100dp"
+
+    android:layout_columnSpan="3"
+    android:layout_gravity="center"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/head"
+    android:layout_width="100dp" />
+    <EditText
+        android:id="@+id/telephone"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:hint="手机号码"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_bg"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:hint="密码(6-16位数字、字母)"
+        android:background="@drawable/edit_bg"
+        android:layout_marginBottom="15dp"/>
+    <EditText
+        android:id="@+id/Confirm"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:hint="确认密码"
+        android:background="@drawable/edit_bg"
+        android:layout_marginBottom="15dp"/>
+    <Button
+        android:id="@+id/sign"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:text="注           册"
+        android:paddingTop="6dp"
+        android:textSize="15dp"
+        android:textColor="#c3cbd6"
+        android:background="@drawable/shape"
+        android:layout_marginBottom="15dp"/>
+    <Space
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"/>
+    <TextView
+        android:id="@+id/gologin"
+        android:text="已有账号，马上登录"
+        android:textColor="#3f51b5"
+        android:layout_marginRight="65dp"/>
+
+</GridLayout>

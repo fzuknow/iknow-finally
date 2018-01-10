@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_marginTop="10dp"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/queImage"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/baseque"/>
+    <TextView
+        android:layout_toRightOf="@+id/queImage"
+       android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:id="@+id/que_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ansimage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/queImage"
+        android:id="@+id/ans_detail"
+        android:layout_toLeftOf="@+id/ansimage"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_alignTop="@+id/ansimage"
+        android:layout_toRightOf="@+id/queImage"
+        android:paddingBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/ansimage"
+        android:background="@drawable/ans"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="21dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/que_detail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp" />
+
+</RelativeLayout>

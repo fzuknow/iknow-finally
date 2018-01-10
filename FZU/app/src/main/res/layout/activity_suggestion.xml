@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmodify">
+    <include layout="@layout/titlebar_view"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/suggestion"
+        android:hint="请在此处写下您宝贵的意见(不少于10个字~)"/>
+    <!--中间为一条分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"/>
+    <Button
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="65dp"
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:text="提           交"
+        android:textColor="#ffffff"
+        android:layout_gravity="fill"
+        android:layout_height="40dp"
+        android:background="@drawable/shape"/>
+</LinearLayout>

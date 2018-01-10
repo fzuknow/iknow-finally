@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/backmodify">
+    <include layout="@layout/titlebar_view"/>
+ <GridLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:rowCount="11"
+     android:columnCount="4">
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+         android:id="@+id/informationImage"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/information"
+         android:layout_marginRight="20dp" />
+     <Button
+         android:layout_marginTop="10dp"
+         android:id="@+id/account_information"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00000000"
+         android:gravity="left"
+         android:layout_columnSpan="2"
+         android:layout_gravity="fill"
+         android:textSize="18dp"
+         android:text="账号信息" />
+     <!--进入账号信息的箭头 >  -->
+     <ImageButton
+         android:layout_marginTop="10dp"
+         android:id="@+id/inforImageButton"
+         android:background="@drawable/more"
+         android:layout_marginLeft="135dp"
+         android:layout_height="25dp"
+         android:layout_width="25dp" />
+
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:id="@+id/SafeImage"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/secre"
+         android:layout_marginRight="20dp" />
+     <Button
+         android:id="@+id/Safe"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00000000"
+         android:gravity="left"
+         android:layout_columnSpan="2"
+         android:layout_gravity="fill"
+         android:textSize="18dp"
+         android:text="隐私与安全" />
+     <!--进入账号信息的箭头 >  -->
+     <ImageButton
+         android:id="@+id/safeImageButton"
+         android:background="@drawable/more"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_marginLeft="135dp"/>
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:id="@+id/noticesetImage"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/call"
+         android:layout_marginRight="20dp" />
+     <Button
+         android:id="@+id/noticeSet"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00000000"
+         android:gravity="left"
+         android:layout_columnSpan="2"
+         android:layout_gravity="fill"
+         android:textSize="18dp"
+         android:text="通知设置" />
+     <!--进入账号信息的箭头 >  -->
+     <ImageButton
+         android:id="@+id/noticeImageButton"
+         android:background="@drawable/more"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_marginLeft="135dp"/>
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:id="@+id/nightImage"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/timg"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="20dp"/>
+     <Button
+         android:id="@+id/night"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00000000"
+         android:gravity="left"
+         android:layout_columnSpan="2"
+         android:layout_gravity="fill"
+         android:textSize="18dp"
+         android:text="夜间模式"
+         android:layout_marginBottom="20dp"/>
+     <!--开关  -->
+     <Switch
+         android:id="@+id/On_Off3"
+         android:layout_columnSpan="1"
+         android:layout_gravity="fill"
+         android:layout_width="158dp"
+         android:layout_marginBottom="58dp"/>
+
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:id="@+id/AboutImage"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/callme"
+         android:layout_marginRight="20dp" />
+     <Button
+         android:id="@+id/About"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00000000"
+         android:gravity="left"
+         android:layout_columnSpan="2"
+         android:layout_gravity="fill"
+         android:textSize="18dp"
+         android:text="关于我们"/>
+     <!--进入账号信息的箭头 >  -->
+     <ImageButton
+         android:id="@+id/aboutImageButton"
+         android:background="@drawable/more"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_marginLeft="135dp"/>
+
+
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:id="@+id/Image"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/fankui"
+         android:layout_marginRight="20dp" />
+     <Button
+         android:id="@+id/suggestion"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00000000"
+         android:gravity="left"
+         android:layout_columnSpan="2"
+         android:layout_gravity="fill"
+         android:textSize="18dp"
+         android:text="意见反馈"/>
+     <!--进入账号信息的箭头 >  -->
+     <ImageButton
+         android:id="@+id/suggesImageButton"
+         android:background="@drawable/more"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_marginLeft="135dp"/>
+
+
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:id="@+id/VersionImage"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/up"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="20dp"/>
+     <Button
+         android:id="@+id/Version"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00000000"
+         android:gravity="left"
+         android:layout_columnSpan="2"
+         android:layout_gravity="fill"
+         android:textSize="18dp"
+         android:text="版本更新"
+         android:layout_marginBottom="20dp"/>
+     <!--进入账号信息的箭头 >  -->
+     <ImageButton
+         android:id="@+id/versionImageButton"
+         android:background="@drawable/more"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_marginLeft="135dp"/>
+
+     <!--<ImageView-->
+         <!--android:layout_marginLeft="10dp"-->
+         <!--android:id="@+id/ClearImage"-->
+         <!--android:layout_width="25dp"-->
+         <!--android:layout_height="25dp"-->
+         <!--android:src="@drawable/clean"-->
+         <!--android:layout_marginRight="18dp" />-->
+     <!--<Button-->
+         <!--android:id="@+id/Clear"-->
+         <!--android:layout_width="wrap_content"-->
+         <!--android:layout_height="wrap_content"-->
+         <!--android:background="#00000000"-->
+         <!--android:gravity="left"-->
+         <!--android:layout_columnSpan="2"-->
+         <!--android:layout_gravity="fill"-->
+         <!--android:textSize="18dp"-->
+         <!--android:text="清除缓存" />-->
+     <!--&lt;!&ndash;进入账号信息的箭头 >  &ndash;&gt;-->
+     <!--<ImageButton-->
+         <!--android:id="@+id/clearImageButton"-->
+         <!--android:background="@drawable/more"-->
+         <!--android:layout_width="25dp"-->
+         <!--android:layout_height="25dp"-->
+         <!--android:layout_marginLeft="135dp"/>-->
+
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:id="@+id/ExitImage"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:src="@drawable/out"
+         android:layout_marginRight="20dp" />
+     <Button
+         android:id="@+id/Exit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#00000000"
+         android:gravity="left"
+         android:layout_columnSpan="2"
+         android:layout_gravity="fill"
+         android:textSize="18dp"
+         android:text="退出账号" />
+     <!--进入账号信息的箭头 >  -->
+     <ImageButton
+         android:id="@+id/exitImageButton"
+         android:background="@drawable/more"
+         android:layout_width="25dp"
+         android:layout_height="25dp"
+         android:layout_marginLeft="135dp"/>
+
+ </GridLayout>
+
+
+
+
+</LinearLayout>

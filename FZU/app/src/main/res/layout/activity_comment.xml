@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmodify">
+    <include layout="@layout/titlebar_view" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/InputComment"
+    android:hint="请输入您的评论,不超过50字....."
+    android:maxLength="50"/>
+    <Button
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="65dp"
+        android:id="@+id/send"
+        android:layout_width="250dp"
+        android:text="发           表"
+        android:textColor="#ffffff"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:layout_height="40dp"
+        android:background="@drawable/shape"/>
+</LinearLayout>
